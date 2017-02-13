@@ -1,0 +1,14 @@
+<h1>Chicago Employees</h1>
+
+<table>
+  <tr>
+    <th>Employee Name</th>
+    <th>Job Title</th>
+  </tr>
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee["job_titles"] %></td>
+    <td><%= employee["name"] %></td>
+  </tr>
+<% end %>
+</table>
